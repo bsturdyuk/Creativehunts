@@ -18,7 +18,38 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" type="text/css" href="css/master.css">
 	</head>
-	<body>
+
+	<body onload="initialize()" id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                	<img src="img/creativehunts_logo.svg" class="img-responsive nav-logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		     			<ul class="nav navbar-nav">
+		     			 	<li><a href="#about">who we are</a></li>
+								<li><a href="#service">what we do</a></li>
+								<li><a href="#gallery">our works</a></li>
+								<li><a href="#contact">get in touch</a></li>
+		     			</ul>
+
+							<div class="social-links">
+								<a href="#"><img src="img/fb.svg" alt="facebook"></a>
+								<a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+							</div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
 		<!-- jQuery -->
 		<script

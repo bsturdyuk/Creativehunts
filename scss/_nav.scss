@@ -1,1 +1,24 @@
 // _nav.scss
+
+.navbar {
+  height: 60px;
+
+  .navbar-header {
+    .navbar-toggle {
+      position: relative;
+      float: left;
+      padding: 15px 15px;
+      margin-top: 15px;
+      margin-left: 15px;
+      background-color: red;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+    .navbar-brand {
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
