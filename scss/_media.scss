@@ -4,13 +4,13 @@
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
     	.navbar { border-bottom: 1px solid red; }
-        
+
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
     	.navbar { border-bottom: 1px solid blue; }
-        
+
     }
 
     /* Small Devices, Tablets */
@@ -18,12 +18,12 @@
     	.navbar { border-bottom: 1px solid green; }
     }
 
-    /* Extra Small Devices, Phones */ 
+    /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
     	.navbar { border-bottom: 1px solid yellow; }
     }
 
-    /* Custom, iPhone Retina */ 
+    /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {
-        .navbar { border-bottom: 1px solid pink; } 
+        .navbar { border-bottom: 1px solid pink; }
     }

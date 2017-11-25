@@ -1,16 +1,84 @@
-.navbar {
-  height: 60px; }
-  .navbar .navbar-header .navbar-toggle {
-    position: relative;
-    float: left;
-    padding: 15px 15px;
-    margin-top: 15px;
-    margin-left: 15px;
-    background-color: red;
-    border: 1px solid transparent;
-    border-radius: 4px; }
-  .navbar .navbar-header .navbar-brand img {
+body {
+  padding: 0px 35px 0px; }
+
+.container {
+  width: 1210px; }
+
+/*
+ * Full menu
+ * ----------
+ * Styles in this section are very
+ * important and you have to implement
+ * them if you want for your
+ * navigation to work properly.
+ *
+ */
+.full-menu {
+  visibility: hidden;
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.92);
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+
+.full-menu--open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  background-color: #1b1b22;
+  z-index: 9999; }
+
+.full-menu--transition {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+
+.full-menu--middle {
+  display: table-cell;
+  vertical-align: middle; }
+  .full-menu--middle .logo-main {
+    position: absolute;
+    top: 30px;
+    right: 150px;
     width: 200px; }
+
+.menu-toggle {
+  border: 0;
+  color: #fff;
+  background-color: transparent;
+  padding: 10px 10px 5px 10px;
+  margin: 20px 0;
+  width: 50px; }
+
+.menu-toggle--close {
+  position: absolute;
+  top: 0px;
+  left: 125px;
+  width: 50px; }
+
+.main-nav {
+  list-style-type: none;
+  text-align: center; }
+  .main-nav li {
+    text-decoration: none; }
+
+.splash-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg-lines.png"), url("../img/bg-splash.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: .2; }
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
