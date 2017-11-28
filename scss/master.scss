@@ -1,13 +1,17 @@
 // master.scss
 
 @import "colors";
-@import "globals";
 @import "fonts";
 @import "nav";
 @import "landing";
+@import "globals";
 @import "media";
 
 body {
 	height: auto;
 	width: 100%;
+}
+html {
+	width: 100%;
+	height: 100%;
 }

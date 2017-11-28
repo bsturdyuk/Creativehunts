@@ -1,15 +1,88 @@
 // _landing.scss
 
 
+
+/*======= Splash Section =======*/
 .splash-section {
   width: 100%;
   height: 100vh;
-  background-image: url('../img/bg-lines.png'),
-  url('../img/bg-splash.png');
-  background-repeat: no-repeat,
-      no-repeat,
-      no-repeat;
-  background-position: center;
+  margin-top: 70px;
+
+  .splash-title-container {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    z-index: 9998;
+  }
+
+  .homepage-hero-module {
+    .video-container {
+      opacity: .2;
+    }
+  }
+}
+.splash-overflow {
+  background-image: url('../img/bg-lines.png');
+  background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
-  opacity: .2;
+  position: absolute;
+  top: 70px;
+  height: 140vh;
+  width: 100%;
+}
+
+/*======= Branding Section =======*/
+.branding-section {
+  height: 100vh;
+  width: 100%;
+  margin-top: 100px;
+
+  .left {
+    padding-left: 15%;
+    padding-top: 150px;
+
+    h1 {
+      margin-bottom: 50px;
+    }
+    h3 {
+      margin-bottom: 30px;
+    }
+  }
+  .right {
+    padding-right: 0px;
+    position: absolute;
+    right: 0;
+
+    img {
+      margin-bottom: 15px;
+      display: block;
+      width: 100%;
+    }
+
+    .discover-link {
+      position: absolute;
+      bottom: 40px;
+      right: 30%;
+    }
+  }
+}
+
+
+
+/*======= Advertising Section =======*/
+.advertising-section {
+  height: 100vh;
+
+  .right {
+
+    h1 {
+      span.underline {
+        border-bottom: 3px solid orange;
+      }
+    }
+  }
 }
