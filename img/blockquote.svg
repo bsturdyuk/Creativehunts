@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 99.3658px;
+      }
+
+      .cls-2 {
+        font-family: "Montserrat-SemiBold";
+        font-weight: bold;
+      }
+    </style>
+
+    <clipPath id="clip-path-1">
+      <rect x="-103" y="-2798" width="1366" height="6537"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip-path-1)">
+    <text transform="translate(-2 80) scale(1.07)" class="cls-1"><tspan class="cls-2">“</tspan></text>
+  </g>
+</svg>

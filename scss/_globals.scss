@@ -11,12 +11,49 @@ h1 {
     border-bottom: 3px solid black;
   }
 }
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.2vw;
+  text-align: center;
+}
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2vw;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8vw;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.1vw;
+  margin-bottom: 0px;
+}
+p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1vw;
+  line-height: 32px;
+  text-align: center;
+}
+a.branding {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.9vw;
+  text-decoration: underline;
+  color: $text-blk;
+}
+
+.row {
+  margin: 0;
+}
 
 
 // Landing globals
 ul.landing-list {
    list-style: none;
- 
+
    li {
      position: relative;
      margin-bottom: 10px;
@@ -35,29 +72,49 @@ ul.landing-list {
    }
 }
 
+//blockquote
+.blockquote {
+  padding: 30px 0px 30px 60px;
+  margin: 50px 0 0 0;
+  background-image: url("../img/blockquote.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 0;
+  width: 500px;
+
+  h1 {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    text-transform: none;
+
+    span.achieve {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bolder;
+      color: $orange;
+    }
+  }
+
+  .blockquote2 {
+    background-image: url("../img/blockquote2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 50px;
+    height: 35px;
+    position: relative;
+    left: 385px;
+  }
+}
+
 // Colors
 .orange {
   color: $orange;
 }
 
 
-// Controls
-.scroll-down {
-  position: fixed;
-  left: 10%;
-  top: 400px;
-  display: block;
-  writing-mode: sideways-lr;
-  z-index: 9995;
-}
-.scroll-up {
-  position: fixed;
-  left: 90%  ;
-  top: 400px;
-  display: block;
-  writing-mode: sideways-lr;
-  z-index: 9995;
-}
+
+
 
 // video bg
 .homepage-hero-module {
@@ -100,4 +157,11 @@ ul.landing-list {
 }
 .video-container video.fillWidth {
     width: 100%;
+}
+
+
+
+// Footer Section
+footer {
+
 }
