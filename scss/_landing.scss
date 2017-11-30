@@ -220,7 +220,18 @@
 
 // Clients Section
 .clients-section {
-  height: 100vh;
+  height: auto;
   margin-top: 100px;
-  padding-left: 10%;
+  padding: 0 10%;
+
+  .clients-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 32%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-self: start;
+    align-self: center;
+  }
 }

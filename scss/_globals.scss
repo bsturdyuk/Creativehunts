@@ -162,6 +162,61 @@ ul.landing-list {
 
 
 // Footer Section
-footer {
+.footer {
+  background-color: $footer-blk;
+  padding: 50px 10%;
+  color: $white;
 
+  .upper {
+    .left {
+      padding-right: 50px;
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 17px;
+        text-align: left !important; 
+      }
+
+      a {
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+
+    .right {
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+        float: right;
+      }
+      a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        float: right;
+        color: $white;
+      }
+      p.telephone {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        float: right;
+      }
+    }
+  }
+
+  .lower {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+  }
 }

@@ -218,9 +218,18 @@
     width: 100%; }
 
 .clients-section {
-  height: 100vh;
+  height: auto;
   margin-top: 100px;
-  padding-left: 10%; }
+  padding: 0 10%; }
+  .clients-section .clients-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 32%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-self: start;
+    align-self: center; }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -352,6 +361,48 @@ ul.landing-list {
 
 .video-container video.fillWidth {
   width: 100%; }
+
+.footer {
+  background-color: #373737;
+  padding: 50px 10%;
+  color: #fff; }
+  .footer .upper .left {
+    padding-right: 50px; }
+    .footer .upper .left p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+      font-size: 17px;
+      text-align: left !important; }
+    .footer .upper .left a {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      color: #fff;
+      text-decoration: underline; }
+  .footer .upper .right p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    float: right; }
+  .footer .upper .right a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    float: right;
+    color: #fff; }
+  .footer .upper .right p.telephone {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    float: right; }
+  .footer .lower {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-items: center;
+    align-items: center; }
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
