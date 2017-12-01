@@ -46,6 +46,36 @@
     top: 30px;
     right: 150px;
     width: 200px; }
+  .full-menu--middle .main-nav {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px; }
+    .full-menu--middle .main-nav li {
+      text-decoration: none; }
+      .full-menu--middle .main-nav li a {
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        width: 200px;
+        margin: 35px auto 25px auto;
+        transition: all .33s ease-in-out;
+        padding: 5px;
+        line-height: 0px;
+        border-bottom: 10px solid transparent; }
+        .full-menu--middle .main-nav li a:hover {
+          text-decoration: none;
+          border-bottom: 10px solid #f58220;
+          width: 200px; }
+  .full-menu--middle .social-links {
+    text-align: center;
+    width: 200px;
+    margin: 0 auto; }
+    .full-menu--middle .social-links a img {
+      display: inline;
+      max-width: 50px;
+      margin: 20px 10px; }
 
 .menu-toggle {
   border: 0;
@@ -64,12 +94,6 @@
   top: 0px;
   left: 10%;
   width: 50px; }
-
-.main-nav {
-  list-style-type: none;
-  text-align: center; }
-  .main-nav li {
-    text-decoration: none; }
 
 /*======= Splash Section =======*/
 .splash-section {
@@ -222,14 +246,14 @@
   margin-top: 100px;
   padding: 0 10%; }
   .clients-section .clients-container {
-    margin-top: 100px;
+    margin: 100px 0 200px;
     display: grid;
-    grid-template-rows: 32%;
+    grid-template-rows: 150px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    justify-self: start;
-    align-self: center; }
+    grid-column-gap: 15%;
+    grid-row-gap: 100px;
+    justify-items: center;
+    align-items: center; }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -272,6 +296,14 @@ a.branding {
   text-decoration: underline;
   color: #3c3c3c; }
 
+a.scroll-down {
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  color: #3c3c3c;
+  text-decoration: none; }
+  a.scroll-down img {
+    margin-top: 10px; }
+
 .row {
   margin: 0; }
 
@@ -293,7 +325,7 @@ ul.landing-list {
 
 .blockquote {
   padding: 30px 0px 30px 60px;
-  margin: 50px 0 0 0;
+  margin: 80px 0 0 0;
   background-image: url("../img/blockquote.svg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -320,6 +352,47 @@ ul.landing-list {
 
 .orange {
   color: #f58220; }
+
+.cta {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #fff;
+  display: inline;
+  transition: all .33s ease-in-out 0s; }
+  .cta:hover {
+    color: #fff;
+    text-decoration: none !important; }
+    .cta:hover .cta-arrow {
+      transition: all .33s ease-in-out 0s;
+      -moz-transform: translateX(160px) translateY(0px);
+      -webkit-transform: translateX(160px) translateY(0px);
+      -o-transform: translateX(160px) translateY(0px);
+      -ms-transform: translateX(160px) translateY(0px);
+      transform: translateX(160px) translateY(0px); }
+  .cta:focus {
+    border-bottom: 4px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    outline: none !important; }
+    .cta:focus img {
+      display: none; }
+  .cta .cta-arrow {
+    display: inline;
+    width: 50px;
+    position: inherit;
+    margin-left: -70px;
+    margin-right: 20px; }
+
+.cta-footer:hover {
+  text-decoration: none !important; }
+  .cta-footer:hover .cta-arrow {
+    transition: all .33s ease-in-out 0s;
+    -moz-transform: translateX(240px) translateY(0px);
+    -webkit-transform: translateX(240px) translateY(0px);
+    -o-transform: translateX(240px) translateY(0px);
+    -ms-transform: translateX(240px) translateY(0px);
+    transform: translateX(240px) translateY(0px); }
 
 .homepage-hero-module {
   border-right: none;
@@ -362,47 +435,63 @@ ul.landing-list {
 .video-container video.fillWidth {
   width: 100%; }
 
-.footer {
+footer {
   background-color: #373737;
   padding: 50px 10%;
   color: #fff; }
-  .footer .upper .left {
+  footer .upper .left {
     padding-right: 50px; }
-    .footer .upper .left p {
+    footer .upper .left p {
       font-family: 'Montserrat', sans-serif;
       font-weight: 200;
       font-size: 17px;
       text-align: left !important; }
-    .footer .upper .left a {
+    footer .upper .left a {
       font-family: 'Playfair Display', serif;
       font-size: 30px;
       color: #fff;
       text-decoration: underline; }
-  .footer .upper .right p {
+  footer .upper .right p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 19px;
     float: right; }
-  .footer .upper .right a {
+  footer .upper .right a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 30px;
     float: right;
     color: #fff; }
-  .footer .upper .right p.telephone {
+  footer .upper .right p.telephone {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 17px;
     float: right; }
-  .footer .lower {
-    width: 100%;
-    display: grid;
-    grid-template-rows: 25%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    justify-items: center;
-    align-items: center; }
+  footer .lower .social-container {
+    height: 250px;
+    position: relative; }
+    footer .lower .social-container .footer-contents {
+      position: absolute;
+      bottom: 0;
+      width: 90%;
+      margin: 0 auto;
+      display: block; }
+      footer .lower .social-container .footer-contents .main-logo {
+        display: block; }
+      footer .lower .social-container .footer-contents .social-icons {
+        display: block;
+        text-align: center; }
+        footer .lower .social-container .footer-contents .social-icons a {
+          height: auto;
+          width: 100%;
+          margin-right: 20px; }
+          footer .lower .social-container .footer-contents .social-icons a img {
+            display: inline;
+            width: 50px; }
+  footer .lower #creativehunts .footer-contents .main-logo {
+    margin-bottom: 50px; }
+  footer .lower #hunterone .footer-contents .main-logo {
+    margin-bottom: 30px; }
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */

@@ -44,6 +44,17 @@ a.branding {
   text-decoration: underline;
   color: $text-blk;
 }
+a.scroll-down {
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  color: $text-blk;
+  text-decoration: none;
+
+  img {
+    margin-top: 10px;
+  }
+}
+
 
 .row {
   margin: 0;
@@ -75,7 +86,7 @@ ul.landing-list {
 //blockquote
 .blockquote {
   padding: 30px 0px 30px 60px;
-  margin: 50px 0 0 0;
+  margin: 80px 0 0 0;
   background-image: url("../img/blockquote.svg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -113,7 +124,64 @@ ul.landing-list {
 }
 
 
+// CTA
+.cta {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: $white;
 
+  display: inline;
+  transition: all .33s ease-in-out 0s;
+
+  &:hover {
+    color: $white;
+    text-decoration: none !important;
+
+    .cta-arrow {
+      transition: all .33s ease-in-out 0s;
+      -moz-transform: translateX(160px) translateY(0px);
+      -webkit-transform: translateX(160px) translateY(0px);
+      -o-transform: translateX(160px) translateY(0px);
+      -ms-transform: translateX(160px) translateY(0px);
+      transform: translateX(160px) translateY(0px);
+    }
+  }
+
+  &:focus {
+    border-bottom: 4px solid $white;
+    color: $white;
+    text-decoration: none;
+    outline: none !important;
+
+    img {
+      display: none;
+    }
+  }
+
+  .cta-arrow {
+    display: inline;
+    width: 50px;
+    position: inherit;
+    margin-left: -70px;
+    margin-right: 20px;
+  }
+}
+
+.cta-footer {
+  &:hover {
+    text-decoration: none !important;
+
+    .cta-arrow {
+      transition: all .33s ease-in-out 0s;
+      -moz-transform: translateX(240px) translateY(0px);
+      -webkit-transform: translateX(240px) translateY(0px);
+      -o-transform: translateX(240px) translateY(0px);
+      -ms-transform: translateX(240px) translateY(0px);
+      transform: translateX(240px) translateY(0px);
+    }
+  }
+}
 
 
 // video bg
@@ -162,7 +230,7 @@ ul.landing-list {
 
 
 // Footer Section
-.footer {
+footer {
   background-color: $footer-blk;
   padding: 50px 10%;
   color: $white;
@@ -175,7 +243,7 @@ ul.landing-list {
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
         font-size: 17px;
-        text-align: left !important; 
+        text-align: left !important;
       }
 
       a {
@@ -210,13 +278,52 @@ ul.landing-list {
   }
 
   .lower {
-    width: 100%;
-    display: grid;
-    grid-template-rows: 25%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    justify-items: center;
-    align-items: center;
+    .social-container {
+      height: 250px;
+      position: relative;
+
+      .footer-contents {
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+
+        .main-logo {
+          display: block;
+        }
+
+        .social-icons {
+          display: block;
+          text-align: center;
+
+          a {
+            height: auto;
+            width: 100%;
+            margin-right: 20px;
+
+            img {
+              display: inline;
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+
+    #creativehunts {
+      .footer-contents {
+        .main-logo {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    #hunterone {
+      .footer-contents {
+        .main-logo {
+          margin-bottom: 30px;
+        }
+      }
+    }
   }
 }
