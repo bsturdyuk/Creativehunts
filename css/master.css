@@ -54,10 +54,6 @@
       text-decoration: none; }
       .full-menu--middle .main-nav li a {
         display: block;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
-        font-weight: 600;
-        color: #fff;
         width: 200px;
         margin: 35px auto 25px auto;
         transition: all .33s ease-in-out;
@@ -138,39 +134,34 @@
 
 /*======= Branding Section =======*/
 .branding-section {
-  height: 89.5vh;
+  height: auto;
   width: 100%;
   margin-top: 100px; }
+  .branding-section .scroll-down {
+    position: relative;
+    left: 10%;
+    top: 350px;
+    display: block;
+    writing-mode: sideways-lr;
+    z-index: 9995; }
   .branding-section .left {
-    padding-left: 15%;
-    padding-top: 80px;
-    height: 100%; }
-    .branding-section .left .scroll-down {
-      position: relative;
-      left: -20%;
-      top: 350px;
-      display: block;
-      writing-mode: sideways-lr;
-      z-index: 9995; }
-    .branding-section .left h1 {
-      margin-bottom: 50px; }
-    .branding-section .left h3 {
+    padding-left: 15%; }
+    .branding-section .left .box h1 {
+      margin: 0px 0 50px 0;
+      display: block; }
+    .branding-section .left .box h3 {
       margin-bottom: 15px; }
-    .branding-section .left .item-desc {
+    .branding-section .left .box .item-desc {
       position: absolute;
-      bottom: 0px; }
+      bottom: 0; }
   .branding-section .right {
     padding-right: 0px;
-    position: absolute;
+    position: relative;
     right: 0; }
-    .branding-section .right img {
+    .branding-section .right .box img {
       margin-bottom: 15px;
       display: block;
       width: 100%; }
-    .branding-section .right .discover-link {
-      position: absolute;
-      bottom: 40px;
-      right: 30%; }
 
 /*======= Advertising Section =======*/
 .advertising-section {
@@ -203,7 +194,7 @@
   height: 100vh;
   margin-top: 100px; }
   .others-section .others-header {
-    z-index: 9999;
+    z-index: 9998;
     position: relative;
     top: -165px; }
   .others-section img {
@@ -220,7 +211,7 @@
     .others-section .others-content .others-content-inner {
       background-color: #f58220;
       padding: 50px 0 50px 75px;
-      width: 55%;
+      width: 65%;
       margin: 0 auto;
       display: grid;
       grid-template-rows: 50%;
@@ -255,8 +246,13 @@
     justify-items: center;
     align-items: center; }
 
+h1, h4, h5, .main-nav li a, .blockquote h1, .blockquote h1 span.achieve {
+  font-family: 'Montserrat', sans-serif; }
+
+h2, h3, p, a.branding, a.sroll-down, .cta {
+  font-family: 'Playfair Display', serif; }
+
 h1 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 6vw;
   text-transform: uppercase; }
@@ -264,46 +260,54 @@ h1 {
     border-bottom: 3px solid black; }
 
 h2 {
-  font-family: 'Playfair Display', serif;
   font-size: 4.2vw;
   text-align: center; }
 
 h3 {
-  font-family: 'Playfair Display', serif;
   font-size: 2vw; }
 
 h4 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.8vw;
   font-weight: 700;
   text-transform: uppercase; }
 
 h5 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.1vw;
   margin-bottom: 0px; }
 
 p {
-  font-family: 'Playfair Display', serif;
-  font-size: 1vw;
+  font-size: 14px;
   line-height: 32px;
   text-align: center; }
 
 a.branding {
-  font-family: 'Playfair Display', serif;
   font-size: 1.9vw;
   text-decoration: underline;
   color: #3c3c3c; }
 
 a.scroll-down {
-  font-family: 'Playfair Display', serif;
   font-size: 12px;
   color: #3c3c3c;
   text-decoration: none; }
   a.scroll-down img {
     margin-top: 10px; }
 
+.main-nav li a {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff; }
+
+.blockquote h1 {
+  font-size: 54px;
+  font-weight: 400; }
+
+.cta {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #fff; }
+
+/*============================================*/
 .row {
   margin: 0; }
 
@@ -333,12 +337,8 @@ ul.landing-list {
   width: 500px; }
   .blockquote h1 {
     display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 54px;
-    font-weight: 400;
     text-transform: none; }
     .blockquote h1 span.achieve {
-      font-family: 'Montserrat', sans-serif;
       font-weight: bolder;
       color: #f58220; }
   .blockquote .blockquote2 {
@@ -354,10 +354,6 @@ ul.landing-list {
   color: #f58220; }
 
 .cta {
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  text-decoration: underline;
-  color: #fff;
   display: inline;
   transition: all .33s ease-in-out 0s; }
   .cta:hover {
@@ -444,28 +440,28 @@ footer {
     footer .upper .left p {
       font-family: 'Montserrat', sans-serif;
       font-weight: 200;
-      font-size: 17px;
+      font-size: 1vw;
       text-align: left !important; }
     footer .upper .left a {
       font-family: 'Playfair Display', serif;
-      font-size: 30px;
+      font-size: 2vw;
       color: #fff;
       text-decoration: underline; }
   footer .upper .right p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 1.1vw;
     float: right; }
   footer .upper .right a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2vw;
     float: right;
     color: #fff; }
   footer .upper .right p.telephone {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1vw;
     float: right; }
   footer .lower .social-container {
     height: 250px;
@@ -497,19 +493,170 @@ footer {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .menu-toggle {
-    border-bottom: 1px solid red; } }
+    border-bottom: 1px solid red; }
+
+  .others-section .others-content .others-content-inner {
+    width: 75%; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .menu-toggle {
-    border-bottom: 1px solid blue; } }
+    border-bottom: 1px solid blue; }
+
+  h1 {
+    font-size: 5em; }
+
+  h2 {
+    font-size: 4em; }
+
+  h3 {
+    font-size: 2em; }
+
+  h4 {
+    font-size: 1.8em; }
+
+  h5 {
+    font-size: 1.1em; }
+
+  p {
+    font-size: 14px; }
+
+  a.branding {
+    font-size: 1.9em; }
+
+  .splash-section .splash-title-container h2 {
+    font-size: 2.2em; }
+
+  .others-section {
+    margin-top: 0px; }
+    .others-section .others-header {
+      position: static; }
+      .others-section .others-header .main-header {
+        margin-bottom: 50px; }
+    .others-section .others-content .others-content-inner {
+      width: 90%; }
+      .others-section .others-content .others-content-inner h4 {
+        font-size: 1.5em; }
+
+  footer .upper .right p {
+    font-size: 11px; }
+  footer .upper .right p.telephone {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    float: right; }
+  footer .lower .social-container {
+    height: 200px; }
+    footer .lower .social-container .footer-contents .social-icons a {
+      margin-right: 10px; }
+      footer .lower .social-container .footer-contents .social-icons a img {
+        width: 30px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .menu-toggle {
-    border-bottom: 1px solid green; } }
+    border-bottom: 1px solid green; }
+
+  .full-menu--middle .logo-main {
+    right: 15px; }
+
+  .splash-section .splash-title-container {
+    left: 10%;
+    width: 80%; }
+
+  .box {
+    height: auto !important; }
+
+  .branding-section .left .box .item-desc {
+    position: static;
+    bottom: 0;
+    margin: 30px 0 50px; }
+  .branding-section .right {
+    padding-right: 15px; }
+
+  .advertising-section .mid .left {
+    padding-left: 15px; }
+  .advertising-section .mid .right {
+    padding-right: 15px; }
+  .advertising-section .bottom {
+    padding-left: 0; }
+    .advertising-section .bottom .advertising-section .bottom .blockquote {
+      padding: 30px 0px 30px 60px;
+      margin: 60px auto 0 auto;
+      width: 80%; }
+
+  .others-section .others-content .others-content-inner {
+    padding: 20px;
+    width: 95%; }
+    .others-section .others-content .others-content-inner h4 {
+      font-size: 1.4em;
+      margin-bottom: 5px; }
+
+  footer {
+    padding: 50px 15px; }
+    footer .upper .left {
+      padding: 0 15px; }
+      footer .upper .left p {
+        float: none;
+        font-size: 12px;
+        line-height: 24px; }
+      footer .upper .left a {
+        font-size: 2.5vw;
+        color: #fff;
+        text-decoration: underline;
+        float: right; }
+    footer .upper .right {
+      padding: 0; }
+      footer .upper .right p {
+        font-size: 11px;
+        line-height: 23px; }
+      footer .upper .right a {
+        font-size: 14px;
+        margin-bottom: 10px; }
+    footer .lower {
+      margin-top: 30px; }
+      footer .lower #creativehunts, footer .lower #hunterone {
+        margin: 70px 0; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .menu-toggle {
-    border-bottom: 1px solid yellow; } }
+    border-bottom: 1px solid yellow; }
+
+  .splash-section .splash-title-container {
+    left: 5%;
+    width: 90%; }
+
+  .blockquote {
+    padding: 30px;
+    width: auto;
+    background-size: 35px; }
+    .blockquote h1 {
+      font-size: 6vw; }
+    .blockquote .blockquote2 {
+      position: absolute;
+      right: 0;
+      left: auto;
+      width: 35px; }
+
+  .others-section .others-content .others-content-inner {
+    display: block;
+    text-align: center; }
+
+  .clients-section .clients-container {
+    grid-template-columns: 1fr 1fr; }
+
+  footer .upper .left {
+    width: 100%; }
+  footer .upper .right {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center; }
+    footer .upper .right p, footer .upper .right a, footer .upper .right p.telephone {
+      float: none; }
+    footer .upper .right p.telephone {
+      margin-top: 10px; }
+  footer .lower {
+    margin-top: 0px; }
+    footer .lower #creativehunts, footer .lower #hunterone {
+      margin: 0; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   .menu-toggle {

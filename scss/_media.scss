@@ -5,22 +5,252 @@
     @media only screen and (max-width : 1200px) {
     	.menu-toggle { border-bottom: 1px solid red; }
 
+      .others-section {
+        .others-content {
+          .others-content-inner {
+            width: 75%;
+          }
+        }
+      }
+
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
     	.menu-toggle { border-bottom: 1px solid blue; }
 
+      // Fonts
+      h1 {
+        font-size: 5em;
+      }
+      h2 {
+        font-size: 4em;
+      }
+      h3 {
+        font-size: 2em;
+      }
+      h4 {
+        font-size: 1.8em;
+      }
+      h5 {
+        font-size: 1.1em;
+      }
+      p {
+        font-size: 14px;
+      }
+      a.branding {
+        font-size: 1.9em;
+      }
+      .splash-section .splash-title-container h2 {font-size: 2.2em;}
+
+      .others-section {
+        margin-top: 0px;
+
+        .others-header {
+          position: static;
+
+          .main-header {
+            margin-bottom: 50px;
+          }
+        }
+
+        .others-content {
+          .others-content-inner {
+            width: 90%;
+
+            h4 {
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+
+      footer {
+        .upper .right {
+          p {
+            font-size: 11px;
+          }
+          p.telephone {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            float: right;
+          }
+        }
+        .lower .social-container {
+          height: 200px;
+
+          .footer-contents .social-icons a {
+            margin-right: 10px;
+
+            img {
+              width: 30px;
+            }
+          }
+        }
+      }
     }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
     	.menu-toggle { border-bottom: 1px solid green; }
+      .full-menu--middle .logo-main { right: 15px;}
+      .splash-section .splash-title-container { left: 10%; width: 80%; }
+      .box {
+        height: auto !important;
+      }
+
+      // Branding Section
+      .branding-section {
+        .left .box .item-desc {
+          position: static;
+          bottom: 0;
+          margin: 30px 0 50px;
+        }
+        .right {
+          padding-right: 15px;
+        }
+      }
+
+      // Advertising section
+      .advertising-section {
+        .mid {
+          .left {
+            padding-left: 15px;
+          }
+          .right {
+            padding-right: 15px;
+          }
+        }
+        .bottom {
+          padding-left: 0;
+
+          .advertising-section .bottom .blockquote {
+              padding: 30px 0px 30px 60px;
+              margin: 60px auto 0 auto;
+              width: 80%;
+          }
+        }
+      }
+
+      // Others section
+      .others-section {
+        .others-content {
+          .others-content-inner {
+            padding: 20px;
+            width: 95%;
+
+            h4 {
+                font-size: 1.4em;
+                margin-bottom: 5px;
+            }
+          }
+        }
+      }
+
+      // Footer
+      footer {
+        padding: 50px 15px;
+
+        .upper {
+          .left {
+            padding: 0 15px;
+
+            p {
+              float: none;
+              font-size: 12px;
+              line-height: 24px;
+            }
+            a {
+              font-size: 2.5vw;
+              color: #fff;
+              text-decoration: underline;
+              float: right;
+            }
+          }
+          .right {
+            padding: 0;
+
+            p {
+              font-size: 11px;
+              line-height: 23px;
+            }
+            a {
+              font-size: 14px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+        .lower {
+          margin-top: 30px;
+
+          #creativehunts, #hunterone {
+              margin: 70px 0;
+          }
+        }
+      }
     }
 
     /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
     	.menu-toggle { border-bottom: 1px solid yellow; }
+      .splash-section .splash-title-container { left: 5%; width: 90%; }
+
+      .blockquote {
+        padding: 30px;
+        width: auto;
+        background-size: 35px;
+
+        h1 {
+          font-size: 6vw;
+        }
+        .blockquote2 {
+            position: absolute;
+            right: 0;
+            left: auto;
+            width: 35px;
+        }
+      }
+
+      .others-section .others-content .others-content-inner {
+          display: block;
+          text-align: center;
+      }
+
+      .clients-section .clients-container {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      footer {
+        .upper{
+
+          .left {
+            width: 100%;
+          }
+          .right {
+            width: 100%;
+            margin-top: 50px;
+            text-align: center;
+
+            p, a, p.telephone {
+              float: none;
+            }
+            p.telephone {
+              margin-top: 10px;
+            }
+          }
+        }
+
+        .lower {
+          margin-top: 0px;
+
+          #creativehunts, #hunterone {
+              margin: 0;
+          }
+        }
+      }
+
     }
 
     /* Custom, iPhone Retina */

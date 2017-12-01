@@ -1,8 +1,13 @@
 // _globals.scss
 
-
-h1 {
+// Fonts
+h1, h4, h5, .main-nav li a, .blockquote h1, .blockquote h1 span.achieve {
   font-family: 'Montserrat', sans-serif;
+}
+h2, h3, p, a.branding, a.sroll-down, .cta {
+  font-family: 'Playfair Display', serif;
+}
+h1 {
   font-weight: 900;
   font-size: 6vw;
   text-transform: uppercase;
@@ -12,40 +17,33 @@ h1 {
   }
 }
 h2 {
-  font-family: 'Playfair Display', serif;
   font-size: 4.2vw;
   text-align: center;
 }
 h3 {
-  font-family: 'Playfair Display', serif;
   font-size: 2vw;
 }
 h4 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.8vw;
   font-weight: 700;
   text-transform: uppercase;
 }
 h5 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.1vw;
   margin-bottom: 0px;
 }
 p {
-  font-family: 'Playfair Display', serif;
-  font-size: 1vw;
+  font-size: 14px;
   line-height: 32px;
   text-align: center;
 }
 a.branding {
-  font-family: 'Playfair Display', serif;
   font-size: 1.9vw;
   text-decoration: underline;
   color: $text-blk;
 }
 a.scroll-down {
-  font-family: 'Playfair Display', serif;
   font-size: 12px;
   color: $text-blk;
   text-decoration: none;
@@ -54,6 +52,29 @@ a.scroll-down {
     margin-top: 10px;
   }
 }
+.main-nav {
+  li {
+    a {
+       font-size: 30px;
+       font-weight: 600;
+       color: $white;
+     }
+   }
+ }
+ .blockquote {
+   h1 {
+     font-size: 54px;
+     font-weight: 400;
+   }
+ }
+ .cta {
+   font-size: 18px;
+   text-decoration: underline;
+   color: $white;
+ }
+
+
+ /*============================================*/
 
 
 .row {
@@ -95,13 +116,9 @@ ul.landing-list {
 
   h1 {
     display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 54px;
-    font-weight: 400;
     text-transform: none;
 
     span.achieve {
-      font-family: 'Montserrat', sans-serif;
       font-weight: bolder;
       color: $orange;
     }
@@ -126,11 +143,6 @@ ul.landing-list {
 
 // CTA
 .cta {
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  text-decoration: underline;
-  color: $white;
-
   display: inline;
   transition: all .33s ease-in-out 0s;
 
@@ -242,13 +254,13 @@ footer {
       p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
-        font-size: 17px;
+        font-size: 1vw;
         text-align: left !important;
       }
 
       a {
         font-family: 'Playfair Display', serif;
-        font-size: 30px;
+        font-size: 2vw;
         color: $white;
         text-decoration: underline;
       }
@@ -258,20 +270,20 @@ footer {
       p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        font-size: 19px;
+        font-size: 1.1vw;
         float: right;
       }
       a {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 2vw;
         float: right;
         color: $white;
       }
       p.telephone {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        font-size: 17px;
+        font-size: 1vw;
         float: right;
       }
     }
