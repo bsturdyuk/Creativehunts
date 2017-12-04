@@ -41,6 +41,8 @@
       a.branding {
         font-size: 1.9em;
       }
+
+      // Landing Page
       .splash-section .splash-title-container h2 {font-size: 2.2em;}
 
       .others-section {
@@ -65,6 +67,8 @@
         }
       }
 
+
+      // Footer
       footer {
         .upper .right {
           p {
@@ -87,6 +91,35 @@
               width: 30px;
             }
           }
+        }
+      }
+
+      // Who We Are page
+      .who-splash-section {
+        .who-splash-title-container {
+          width: 80%;
+        }
+        .hunter-leaders-section .right {
+            height: 200px;
+            margin-top: 50px;
+        }
+      }
+      .who-quote-section {
+          width: 70%;
+
+          h1 {
+            font-size: 50px;
+          }
+          .orange {
+            font-size: 108px;
+          }
+      }
+      .who-collective-section {
+        width: 90%;
+
+        h1 {
+            font-size: 50px;
+            width: 80%;
         }
       }
     }
@@ -147,6 +180,40 @@
           }
         }
       }
+
+
+      // Who We Are Section
+      .navbar-brand {
+        top: 10px;
+        right: 30px;
+      }
+      .who-collective-section {
+        margin: 0 auto 200px auto;
+
+        .who-collective-container {
+          grid-template-columns: 1fr;
+          margin-top: 80px;
+
+          #one {margin-top: -30px;}
+          #two {margin-top: -30px;}
+          #three {margin-top: -30px;}
+          #four {margin-top: -30px;}
+          #five {margin-top: -30px;}
+        }
+      }
+      .who-splash-section .hunter-leaders-section .right {
+        margin: 100px 0 70px;
+      }
+      .who-quote-section h1 {
+          font-size: 8vw;
+      }
+      .who-quote-section .orange {
+          font-size: 15vw;
+      }
+      .who-collective-section h1 {
+          font-size: 8vw;
+      }
+
 
       // Footer
       footer {
@@ -250,6 +317,45 @@
           }
         }
       }
+
+
+      // Who We Are page
+      .navbar-brand {
+        top: 10px;
+        right: 10px;
+      }
+      .who-splash-section {
+        .who-splash-title-container {
+          width: 95% !important;
+
+          .who-splash-img {
+            width: 60% !important;
+          }
+          h1.who-header {
+            font-size: 50px;
+          }
+          p {
+            width: 95% !important;
+          }
+          .line-break {
+            width: 100px;
+          }
+        }
+        .hunter-leaders-section {
+          width: 95% !important;
+          margin: 100px auto 0 auto;
+
+          .left {
+            .hunter-leaders-container {
+              grid-template-columns: 1fr !important;
+
+              #two { margin-top: -30px;}
+              #three { margin-top: -30px;}
+            }
+          }
+        }
+      }
+
 
     }
 

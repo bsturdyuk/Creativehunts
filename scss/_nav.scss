@@ -147,3 +147,10 @@
    left: 10%;
    width: 50px;
  }
+ .navbar-brand {
+   position: fixed;
+   top: 20px;
+   right: 130px;
+   width: 200px;
+   z-index: 9998;
+ }

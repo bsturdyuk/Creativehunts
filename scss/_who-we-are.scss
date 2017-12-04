@@ -1,0 +1,178 @@
+// Who We Are Page
+
+.who-splash-section {
+  background-color: $splash-blk;
+  color: $white;
+  padding: 100px 0px;
+
+  .who-splash-title-container {
+    width: 60%;
+    margin: 0 auto;
+
+    .who-splash-img {
+      width: 40%;
+      margin: 0 auto;
+    }
+
+    .line-break {
+      width: 200px;
+      height: 5px;
+      background-color: $orange;
+      margin: 30px auto;
+      display: block;
+    }
+    p {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    // Controls
+    .scroll-down {
+      position: relative;
+      left: 50%;
+      top: 50px;
+      color: $white;
+      z-index: 9998;
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  // Hunter Leaders Section
+  .hunter-leaders-section {
+    width: 80%;
+    margin: 0 auto;
+    .left {
+      .hunter-leaders-container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        justify-items: center;
+        align-items: center;
+
+        .column {
+          figure {
+            margin-bottom: 30px;
+          }
+        }
+        #two {
+          margin-top: 300px;
+        }
+        #three {
+          margin-top: 150px;
+        }
+      }
+    }
+    .right {
+      position: relative;
+
+      .text-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+
+        .line-break {
+          height: 5px;
+          width: 100px;
+          margin: 20px auto;
+          background-color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.who-splash-overflow {
+  background-image: url('../img/who-bg-lines.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  top: 40px;
+  height: 160vh;
+  width: 100%;
+}
+
+.who-quote-section {
+  width: 40%;
+  margin: 200px auto;
+  text-align: center;
+
+  h1 {
+    text-transform: none;
+    font-weight: 600;
+    font-size: 60px;
+    margin: 0;
+  }
+  .orange {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: lighter;
+    font-size: 118px;
+    margin: 10px 0 30px 0;
+    line-height: 100px;
+  }
+  h2 {
+    font-size: 25px;
+    margin: 30px 0 0 0;
+  }
+}
+
+
+.who-collective-section {
+  width: 80%;
+  margin: 0 auto 300px auto;
+
+  h1 {
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .who-collective-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    align-items: start;
+    margin-top: 40px;
+
+    .column {
+      figure {
+        margin-bottom: 30px;
+      }
+    }
+    #one {
+      margin-top: 50px;
+    }
+    #two {
+      margin-top: 100px;
+    }
+    #three {
+      margin-top: 0px;
+    }
+    #four {
+      margin-top: 100px;
+    }
+    #five {
+      margin-top: 50px;
+    }
+  }
+}
+
+
+.who-links-section {
+  background-color: $orange;
+  padding: 100px 0 200px 0;
+  color: $white;
+  text-align: center;
+}
