@@ -234,6 +234,31 @@
       }
 
 
+
+      // Our Works page
+      .works-filter-section .works-jumbo-main .right {
+          padding-right: 15px;
+          margin: 50px 0 0 0;
+      }
+
+      .works-filter-section .works-jumbo-second .works-jumbo-content {
+          right: 10px;
+          top: 18%;
+          width: 95%;
+      }
+      .works-filter-section .works-filter-container {
+          width: auto;
+          margin: 50px 15px;
+
+          .gallery_product h4 {
+            width: 100%;
+          }
+      }
+
+
+
+
+
       // Footer
       footer {
         padding: 50px 15px;
@@ -373,6 +398,22 @@
             }
           }
         }
+      }
+
+
+      // Our Works page
+      .works-filter-section .works-jumbo-second .works-jumbo-content {
+          right: 10px;
+          top: 10%;
+          width: 95%;
+          padding: 5px;
+
+          h4 {
+            font-size: 1.5em;
+          }
+      }
+      .works-filter-section .works-filter-container {
+          grid-template-columns: 1fr;
       }
 
 

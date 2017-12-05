@@ -1080,6 +1080,21 @@ footer {
       width: 200px;
       margin: 100px auto 30px auto; }
 
+  .works-filter-section .works-jumbo-main .right {
+    padding-right: 15px;
+    margin: 50px 0 0 0; }
+
+  .works-filter-section .works-jumbo-second .works-jumbo-content {
+    right: 10px;
+    top: 18%;
+    width: 95%; }
+
+  .works-filter-section .works-filter-container {
+    width: auto;
+    margin: 50px 15px; }
+    .works-filter-section .works-filter-container .gallery_product h4 {
+      width: 100%; }
+
   footer {
     padding: 50px 15px; }
     footer .upper .left {
@@ -1170,7 +1185,18 @@ footer {
       .who-splash-section .hunter-leaders-section .left .hunter-leaders-container #two {
         margin-top: -30px; }
       .who-splash-section .hunter-leaders-section .left .hunter-leaders-container #three {
-        margin-top: -30px; } }
+        margin-top: -30px; }
+
+  .works-filter-section .works-jumbo-second .works-jumbo-content {
+    right: 10px;
+    top: 10%;
+    width: 95%;
+    padding: 5px; }
+    .works-filter-section .works-jumbo-second .works-jumbo-content h4 {
+      font-size: 1.5em; }
+
+  .works-filter-section .works-filter-container {
+    grid-template-columns: 1fr; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   .menu-toggle {
