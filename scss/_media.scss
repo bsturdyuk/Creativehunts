@@ -214,6 +214,25 @@
           font-size: 8vw;
       }
 
+      .who-links-section {
+        background-color: $orange;
+        padding: 150px 0 200px 0;
+        color: $white;
+        text-align: center;
+
+        .left {
+          img.icon1 {
+            width: 150px;
+          }
+        }
+        .right {
+          img.icon2 {
+            width: 200px;
+            margin: 100px auto 30px auto;
+          }
+        }
+      }
+
 
       // Footer
       footer {
