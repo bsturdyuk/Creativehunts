@@ -204,6 +204,27 @@ ul.landing-list {
   }
 }
 
+
+
+// Buttons
+.filter-button {
+  font-size: 17px;
+  border: none !important;
+  text-align: center;
+  color: $text-blk;
+  margin-bottom: 30px;
+  background: transparent;
+}
+.filter-button:hover {
+  border: none !important;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn-default:active .filter-button:active {
+}
+
+
+
 // Controls
 .scroll-down {
   display: block;

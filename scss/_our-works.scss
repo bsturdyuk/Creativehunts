@@ -1,0 +1,94 @@
+// Our Works
+
+.works-splash-section {
+  background-color: $white;
+  color: $text-blk;
+  padding: 100px 0px;
+
+  .works-splash-title-container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    z-index: 9998;
+
+    .works-splash-img {
+      width: 40%;
+      margin: 0px auto 100px auto;
+    }
+
+    .line-break {
+      width: 200px;
+      height: 5px;
+      background-color: $orange;
+      margin: 30px auto 150px auto;
+      display: block;
+    }
+
+    // Controls
+    .scroll-down {
+      position: relative;
+      left: 50%;
+      top: 50px;
+
+      img {
+        width: 10px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.works-splash-overflow {
+  background-image: url('../img/bg-lines.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  top: 120px;
+  height: 160vh;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+// Works Filter Section
+.works-filter-section {
+  position: relative;
+  z-index: 9997;
+
+  .works-filter-container {
+    width: 80%;
+    margin: 50px 10%;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    align-items: center;
+
+    .gallery_product {
+      margin-bottom: 30px;
+      text-align: center;
+
+      h4 {
+        margin: 50px auto 20px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        text-transform: none;
+        width: 50%;
+      }
+      a {
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+        line-height: 28px;
+        color: $text-blk;
+        text-decoration: underline;
+      }
+    }
+  }
+}
