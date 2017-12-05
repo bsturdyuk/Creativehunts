@@ -236,6 +236,22 @@
 
 
       // Our Works page
+      .works-splash-section {
+        .works-splash-title-container {
+          width: 80%;
+          img.works-splash-img {
+            width: 50%;
+            margin: 40px auto 80px auto;
+          }
+          h1 {
+            font-size: 90px;
+          }
+          .line-break {
+            width: 90px;
+            margin-bottom: 100px;
+          }
+        }
+      }
       .works-filter-section .works-jumbo-main .right {
           padding-right: 15px;
           margin: 50px 0 0 0;
@@ -402,6 +418,14 @@
 
 
       // Our Works page
+      .works-splash-section {
+        .works-splash-title-container {
+          width: 80%;
+          img.works-splash-img {
+            width: 70%;
+          }
+        }
+      }
       .works-filter-section .works-jumbo-second .works-jumbo-content {
           right: 10px;
           top: 10%;
