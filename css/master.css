@@ -271,6 +271,56 @@
 .works-filter-section {
   position: relative;
   z-index: 9997; }
+  .works-filter-section .works-jumbo-main {
+    margin: 100px 0; }
+    .works-filter-section .works-jumbo-main .left {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .works-filter-section .works-jumbo-main .left .text-container {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center; }
+        .works-filter-section .works-jumbo-main .left .text-container a {
+          color: #3c3c3c;
+          font-family: 'Playfair Display', serif;
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: lighter;
+          text-decoration: underline; }
+        .works-filter-section .works-jumbo-main .left .text-container .line-break {
+          width: 20px;
+          height: 1px;
+          background-color: #3c3c3c;
+          margin: 0 auto; }
+    .works-filter-section .works-jumbo-main .right {
+      padding-right: 0; }
+      .works-filter-section .works-jumbo-main .right img {
+        width: 100%; }
+  .works-filter-section .works-jumbo-second {
+    position: relative; }
+    .works-filter-section .works-jumbo-second img {
+      width: 100%; }
+    .works-filter-section .works-jumbo-second .works-jumbo-content {
+      position: absolute;
+      right: 50px;
+      top: 100px;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      width: 35%; }
+      .works-filter-section .works-jumbo-second .works-jumbo-content a {
+        color: #fff;
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: lighter;
+        text-decoration: underline; }
+      .works-filter-section .works-jumbo-second .works-jumbo-content .line-break {
+        width: 20px;
+        height: 1px;
+        background-color: #fff;
+        margin: 0 auto; }
   .works-filter-section .works-filter-container {
     width: 80%;
     margin: 50px 10%;
@@ -297,6 +347,14 @@
         line-height: 28px;
         color: #3c3c3c;
         text-decoration: underline; }
+  .works-filter-section a.filter-button {
+    text-align: center;
+    margin-bottom: 100px;
+    display: block;
+    text-decoration: underline; }
+    .works-filter-section a.filter-button:hover {
+      cursor: pointer;
+      color: #3c3c3c; }
 
 /*======= Splash Section =======*/
 .splash-section {
@@ -607,6 +665,7 @@ ul.landing-list {
     transform: translateX(240px) translateY(0px); }
 
 .filter-button {
+  font-family: 'Montserrat', sans-serif;
   font-size: 17px;
   border: none !important;
   text-align: center;

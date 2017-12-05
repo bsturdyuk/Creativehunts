@@ -58,6 +58,78 @@
   position: relative;
   z-index: 9997;
 
+  .works-jumbo-main {
+    margin: 100px 0;
+
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .text-container {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+
+        a {
+          color: $text-blk;
+          font-family: 'Playfair Display', serif;
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: lighter;
+          text-decoration: underline;
+        }
+        .line-break {
+          width: 20px;
+          height: 1px;
+          background-color: $text-blk;
+          margin: 0 auto;
+        }
+      }
+    }
+    .right {
+      padding-right: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .works-jumbo-second {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .works-jumbo-content {
+      position: absolute;
+      right: 50px;
+      top: 100px;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      width: 35%;
+
+      a {
+        color: $white;
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: lighter;
+        text-decoration: underline;
+      }
+      .line-break {
+        width: 20px;
+        height: 1px;
+        background-color: $white;
+        margin: 0 auto;
+      }
+    }
+  }
+
+
+
   .works-filter-container {
     width: 80%;
     margin: 50px 10%;
@@ -89,6 +161,18 @@
         color: $text-blk;
         text-decoration: underline;
       }
+    }
+  }
+
+  a.filter-button {
+    text-align: center;
+    margin-bottom: 100px;
+    display: block;
+    text-decoration: underline;
+
+    &:hover {
+      cursor: pointer;
+      color: $text-blk;
     }
   }
 }
