@@ -279,7 +279,8 @@
     font-weight: 700;
     text-transform: none;
     line-height: 60px;
-    letter-spacing: -5px; }
+    letter-spacing: -5px;
+    margin: 25% 0; }
     .what-content h1.what-text span.makes-text {
       font-family: 'Playfair Display', serif;
       text-transform: none;
@@ -287,6 +288,29 @@
       font-size: 120px;
       letter-spacing: 0px;
       margin-left: 30px; }
+
+.what-content-items {
+  width: 80%;
+  margin: 0 10% 25% 10%; }
+  .what-content-items h4, .what-content-items ul {
+    text-align: left; }
+  .what-content-items h4 {
+    margin-top: 10px;
+    text-transform: none; }
+  .what-content-items .line-break {
+    width: 50px;
+    height: 5px;
+    background-color: #f58220; }
+  .what-content-items ul {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+    text-align: left; }
+    .what-content-items ul li {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 15px; }
 
 .works-splash-section {
   background-color: #fff;
@@ -1138,6 +1162,17 @@ footer {
       width: 200px;
       margin: 100px auto 30px auto; }
 
+  .what-splash-section .what-splash-title-container {
+    width: 80%; }
+    .what-splash-section .what-splash-title-container img.what-splash-img {
+      width: 50%;
+      margin: 40px auto 80px auto; }
+    .what-splash-section .what-splash-title-container h1 {
+      font-size: 90px; }
+    .what-splash-section .what-splash-title-container .line-break {
+      width: 90px;
+      margin-bottom: 100px; }
+
   .works-splash-section .works-splash-title-container {
     width: 80%; }
     .works-splash-section .works-splash-title-container img.works-splash-img {
@@ -1255,6 +1290,31 @@ footer {
         margin-top: -30px; }
       .who-splash-section .hunter-leaders-section .left .hunter-leaders-container #three {
         margin-top: -30px; }
+
+  .what-splash-section .what-splash-title-container {
+    width: 80%; }
+    .what-splash-section .what-splash-title-container img.what-splash-img {
+      width: 70%; }
+    .what-splash-section .what-splash-title-container h1.who-header {
+      font-size: 50px; }
+    .what-splash-section .what-splash-title-container p {
+      width: 95% !important; }
+    .what-splash-section .what-splash-title-container .line-break {
+      width: 100px; }
+
+  .what-content h1.what-text {
+    line-height: 40px;
+    letter-spacing: -3px;
+    font-size: 3.2em; }
+    .what-content h1.what-text span.makes-text {
+      font-size: 1.5em;
+      letter-spacing: 0px;
+      margin-left: 15px; }
+  .what-content .what-content-items .item {
+    width: 100%;
+    margin-bottom: 50px; }
+    .what-content .what-content-items .item img {
+      float: none !important; }
 
   .works-splash-section .works-splash-title-container {
     width: 80%; }

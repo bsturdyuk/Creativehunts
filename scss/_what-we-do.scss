@@ -67,6 +67,7 @@
     text-transform: none;
     line-height: 60px;
     letter-spacing: -5px;
+    margin: 25% 0;
 
     span.makes-text {
       font-family: 'Playfair Display', serif;
@@ -75,6 +76,37 @@
       font-size: 120px;
       letter-spacing: 0px;
       margin-left: 30px;
+    }
+  }
+}
+
+.what-content-items {
+  width: 80%;
+  margin: 0 10% 25% 10%;
+
+  h4, ul {
+    text-align: left;
+  }
+  h4 {
+    margin-top: 10px;
+    text-transform: none;
+  }
+  .line-break {
+    width: 50px;
+    height: 5px;
+    background-color: $orange;
+  }
+  ul {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+
+    li {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 15px;
     }
   }
 }

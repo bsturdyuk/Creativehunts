@@ -234,6 +234,25 @@
       }
 
 
+      // What we do page
+      .what-splash-section {
+        .what-splash-title-container {
+          width: 80%;
+          img.what-splash-img {
+            width: 50%;
+            margin: 40px auto 80px auto;
+          }
+          h1 {
+            font-size: 90px;
+          }
+          .line-break {
+            width: 90px;
+            margin-bottom: 100px;
+          }
+        }
+      }
+
+
 
       // Our Works page
       .works-splash-section {
@@ -270,6 +289,8 @@
             width: 100%;
           }
       }
+
+
 
 
 
@@ -411,6 +432,50 @@
 
               #two { margin-top: -30px;}
               #three { margin-top: -30px;}
+            }
+          }
+        }
+      }
+
+
+      // What we do Page
+      .what-splash-section {
+        .what-splash-title-container {
+          width: 80%;
+          img.what-splash-img {
+            width: 70%;
+          }
+          h1.who-header {
+            font-size: 50px;
+          }
+          p {
+            width: 95% !important;
+          }
+          .line-break {
+            width: 100px;
+          }
+        }
+      }
+      .what-content {
+        h1.what-text {
+          line-height: 40px;
+          letter-spacing: -3px;
+          font-size: 3.2em;
+
+          span.makes-text {
+            font-size: 1.5em;
+            letter-spacing: 0px;
+            margin-left: 15px;
+          }
+        }
+
+        .what-content-items {
+          .item {
+            width: 100%;
+            margin-bottom: 50px;
+
+            img {
+              float: none !important;
             }
           }
         }
