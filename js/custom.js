@@ -14,8 +14,8 @@ $(document).ready(function(){
     if(value == "all") {
       $('.filter').show('1000');
     } else {
-      $(".filter").not('.'+value).hide('3000');
-      $('.filter').filter('.'+value).show('3000');
+      $(".filter").not('.' + value).hide('3000');
+      $('.filter').filter('.' + value).show('3000');
     }
 
     $(".filter-button").removeClass("active");
@@ -36,9 +36,7 @@ $(document).ready(function(){
 });
 
 function scaleVideoContainer() {
-  var height = $(window).height() + 5;
-  var unitHeight = parseInt(height) + 'px';
-  $('.homepage-hero-module').css('height',unitHeight);
+  $('.homepage-hero-module').css('height', window.innerHeight + 5);
 }
 
 function initBannerVideoSize(element){
@@ -59,17 +57,13 @@ function scaleBannerVideoSize(element){
 
   $(element).each(function(el){
     var videoAspectRatio = $(this).data('height')/$(this).data('width');
-
     $(this).width(windowWidth);
 
     if(windowWidth < 1000){
       videoHeight = windowHeight;
       videoWidth = videoHeight / videoAspectRatio;
       $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-
       $(this).width(videoWidth).height(videoHeight);
     }
-
-    $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
   });
 }
