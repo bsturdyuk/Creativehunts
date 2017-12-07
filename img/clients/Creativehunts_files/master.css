@@ -485,28 +485,15 @@
   max-width: 90%;
   margin: 0 auto 20px auto; }
 
-.contact-lower {
-  width: 80%;
-  margin: 0 10% 50px 10%;
-  position: relative; }
-  .contact-lower .scroll-up {
-    position: relative;
-    left: 50%;
-    font-family: 'Playfair Display', serif;
-    color: #3c3c3c; }
-    .contact-lower .scroll-up img {
-      width: 20px;
-      margin-bottom: 10px; }
-    .contact-lower .scroll-up:focus {
-      outline: none; }
-  .contact-lower .scroll-back {
-    position: absolute;
-    top: -60px;
-    font-family: 'Playfair Display', serif;
-    color: #3c3c3c; }
-    .contact-lower .scroll-back img {
-      width: 10px;
-      margin: 100px 5px 100px 5px; }
+.contact-lower .scroll-up {
+  position: relative;
+  left: 50%;
+  font-family: 'Playfair Display', serif;
+  color: #3c3c3c; }
+  .contact-lower .scroll-up img {
+    width: 20px; }
+  .contact-lower .scroll-up:focus {
+    outline: none; }
 
 /*======= Splash Section =======*/
 .splash-section {
@@ -1148,13 +1135,7 @@ footer {
     width: 90%; }
     .who-collective-section h1 {
       font-size: 50px;
-      width: 80%; }
-
-  .contact-splash-section {
-    width: 90%;
-    margin: 0 5%; }
-    .contact-splash-section .contact-splash-title-container .item p {
-      width: 100%; } }
+      width: 80%; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .menu-toggle {
@@ -1274,9 +1255,6 @@ footer {
     margin: 50px 15px; }
     .works-filter-section .works-filter-container .gallery_product h4 {
       width: 100%; }
-
-  .contact-splash-section .contact-splash-title-container .item .main-icon {
-    max-width: 100px; }
 
   footer {
     padding: 50px 15px; }
@@ -1409,12 +1387,7 @@ footer {
       font-size: 1.5em; }
 
   .works-filter-section .works-filter-container {
-    grid-template-columns: 1fr; }
-
-  .contact-splash-section .contact-splash-title-container {
-    grid-template-columns: 1fr; }
-    .contact-splash-section .contact-splash-title-container .item, .contact-splash-section .contact-splash-title-container #staggered-item {
-      margin-top: 100px; } }
+    grid-template-columns: 1fr; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   .menu-toggle {

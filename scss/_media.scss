@@ -122,6 +122,17 @@
             width: 80%;
         }
       }
+
+
+      // Contact
+      .contact-splash-section {
+        width: 90%;
+        margin: 0 5%;
+
+        .contact-splash-title-container .item p {
+          width: 100%;
+        }
+      }
     }
 
     /* Small Devices, Tablets */
@@ -291,7 +302,10 @@
       }
 
 
-
+      // Contact page
+      .contact-splash-section .contact-splash-title-container .item .main-icon {
+          max-width: 100px;
+      }
 
 
 
@@ -503,6 +517,18 @@
       }
       .works-filter-section .works-filter-container {
           grid-template-columns: 1fr;
+      }
+
+
+
+
+      // Contact Page
+      .contact-splash-section .contact-splash-title-container {
+        grid-template-columns: 1fr;
+
+        .item, #staggered-item {
+          margin-top: 100px;
+        }
       }
 
 

@@ -1,0 +1,105 @@
+// get-in-touch.scss
+
+.contact-splash-section {
+  width: 70%;
+  margin: 0 15%;
+
+  .contact-splash-title-container {
+    display: grid;
+    grid-template-rows: 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 15px;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    z-index: 9998;
+    margin: 150px 0 100px 0;
+
+    .item {
+      img {
+        margin: 0 auto;
+      }
+      .main-icon {
+        max-width: 150px;
+      }
+      p {
+        width: 50%;
+        margin: 0 auto 30px auto;
+      }
+    }
+
+    #staggered-item {
+      margin-top: 150px;
+    }
+  }
+  // Controls
+  .scroll-down {
+    position: relative;
+    left: 50%;
+    font-family: 'Playfair Display', serif;
+
+    img {
+      width: 10px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
+
+// Map
+.contact-map {
+  margin: 50px 0;
+}
+#map .map_adresse {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+#map img{
+  max-width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+
+
+.contact-lower {
+  width: 80%;
+  margin: 0 10% 50px 10%;
+  position: relative;
+
+  // Controls
+  .scroll-up {
+    position: relative;
+    left: 50%;
+    font-family: 'Playfair Display', serif;
+    color: $text-blk;
+
+    img {
+      width: 20px;
+      margin-bottom: 10px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  .scroll-back {
+    position: absolute;
+    top: -60px;
+    font-family: 'Playfair Display', serif;
+    color: $text-blk;
+
+    img {
+      width: 10px;
+      margin: 100px 5px 100px 5px;
+    }
+  }
+}
