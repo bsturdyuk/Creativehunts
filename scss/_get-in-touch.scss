@@ -3,7 +3,8 @@
 .contact-splash-section {
   width: 70%;
   margin: 0 15%;
-
+  height: 100vh;
+  
   .contact-splash-title-container {
     display: grid;
     grid-template-rows: 50%;
@@ -54,6 +55,10 @@
 // Map
 .contact-map {
   margin: 50px 0;
+}
+#map {
+  width: 100%;
+  height: 500px;
 }
 #map .map_adresse {
   font-size: 14px;

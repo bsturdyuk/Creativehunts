@@ -1,0 +1,72 @@
+// what we do single
+
+.full-menu-single {
+  visibility: visible;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  opacity: 1;
+  background-color: rgb(255, 255, 255);
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+
+  .full-menu--middle {
+    visibility: hidden;
+  }
+}
+.full-menu--open {
+  visibility: visible;
+  background-color: #1b1b22;
+  display: table;
+  height: 100%;
+
+  .full-menu--middle {
+    visibility: visible !important;
+    opacity: 1;
+    background-color: #1b1b22;
+
+    .logo-main {
+      top: 25px;
+    }
+  }
+}
+.single-controls {
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  top: 10px;
+
+  a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 50px;
+  }
+
+  .post-control {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+.navbar-brand {
+  position: fixed;
+  top: 10px;
+  right: 135px;
+  width: 230px;
+  z-index: 9998;
+}
+
+
+.single-splash-section {
+  background: url('../img/sir1.png') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}

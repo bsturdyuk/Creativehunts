@@ -230,6 +230,10 @@ ul.landing-list {
 .scroll-down, .scroll {
   display: block;
   writing-mode: sideways-lr;
+  -webkit-writing-mode: sideways-lr;
+  -moz-writing-mode: sideways-lr;
+  -ms-writing-mode: sideways-lr;
+  writing-mode: sideways-lr; /* new syntax */
 }
 
 
@@ -503,6 +507,7 @@ footer {
 
         .main-logo {
           display: block;
+          max-height: 150px;
         }
 
         .social-icons {
